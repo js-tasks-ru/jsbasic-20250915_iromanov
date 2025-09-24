@@ -11,8 +11,11 @@ function print(text) {
  */
 function isValid(name) {
   // ваш код...
+   return !!name && !name.includes(' ') && name.length >= 4;
 }
-
+/**
+ * Эту функцию трогать не нужно
+ */
 function sayHello() {
   let userName = prompt('Введите ваше имя');
 
